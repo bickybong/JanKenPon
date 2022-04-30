@@ -5,66 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
+    <script src="js.js" defer></script>
 </head>
 <body>
-    <script>
-        function compueterPlay() {
-            let options =["Paper", "Scissor","Rock"]
-            return options[Math.floor(Math.random()*3)]
-        }
+      <button id="rock">Rock</button>
+      <button id="scissor">Scissor</button>
+      <button id="paper">Paper</button>
+      <div id="score"></div>
+      <div id="winOrLose"></div>
 
-        function round(playerSelection, computerselection, score){
-            if (playerSelection.toLowerCase() === "paper"){
-                if (computerselection === "Paper"){
-                    return "Its a paper tie"
-                } else if (computerselection === "Scissor"){
-                    return "You lose! Scissor cuts paper"
-                } else{
-                    return "You win! Paper eats rock"
-                }
-            }
-            else if (playerSelection.toLowerCase() === "rock"){
-                if (computerselection === "Paper"){
-                    return "You lose! Paper beats rock"
-                } else if (computerselection === "Scissor"){
-                    return "You win! Rock beats Scissor"
-                } else{
-                    return  "Its a rock tie"
-                }
-            } else{
-            if (playerSelection.toLowerCase() === "scissor"){
-                if (computerselection === "Paper"){
-                    return  "You win! Scissor beats Paper"
-                } else if (computerselection === "Scissor"){
-                    return "Its a Scissor tie"
-                } else{
-                    return "You lose! Rock beats Scissor"
-                }}
-            }}
-         
-        function game5(){
-            let score = 0
-            for (let i=0; i<5; i++){
-                let player = prompt("Choose rock, paper or scissor")
-                let result = round(player, compueterPlay());
-                if (result.includes("win")){
-                    score++
-                } else if (result.includes("lose")){
-                    score--
-                }
-                alert(`${result}, Current score is ${score}`)
-            }
-            if (score>0){
-                alert(`You  Win! Final score is ${score}!`)
-            } else if (score<0) {
-                alert(`You Lose! Final score is ${score}!`)
-            } else{
-                alert(`You Tie! Final score is ${score}!`)
-            }
-        }
-
-        game5()
-
-    </script>
 </body>
 </html>
