@@ -48,7 +48,7 @@ function checkScore(){
         alert("SCRUB YOU LOSE");
         winOrLose.textContent = "SCRUB YOU LOSE";
         disableButtons();
-    }
+    }}
 
 const rock = document.querySelector('#rock'); 
 rock.addEventListener('click', () => 
