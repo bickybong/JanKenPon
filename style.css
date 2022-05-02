@@ -1,0 +1,41 @@
+body{
+    background-color: aliceblue;
+    font: 36px Roboto  ;
+    font-weight: bold;
+    height: 100%;
+
+}
+
+#overall{
+    height: 100%;
+  min-height: 100%;
+  display: flex;
+    flex-flow: column;
+}
+
+#winOrLose{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+#score{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    color: blueviolet;
+    font: 30px monaco ;
+    border-radius: 10px;
+    background-color: bisque;
+}

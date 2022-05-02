@@ -45,8 +45,8 @@ function checkScore(){
         winOrLose.textContent = "YOU WIN KING";
         disableButtons();
     } else if (comScore >=5){
-        alert("SCRUB YOU LOSE");
-        winOrLose.textContent = "SCRUB YOU LOSE";
+        alert("YOU LOSE TRY AGAIN");
+        winOrLose.textContent = "YOU LOSE TRY AGAIN";
         disableButtons();
     }}
 
@@ -64,7 +64,7 @@ scissor.addEventListener('click', () =>
 
 const score = document.querySelector('#score'); 
 const winOrLose = document.querySelector('#winOrLose');
-winOrLose.textContent = "LETS GOOOOOOOO";
+winOrLose.textContent = "Choose your fate";
 
 let playerScore = 0, comScore = 0;
 score.textContent = `Player score is ${playerScore}, Com score is ${comScore}`;
