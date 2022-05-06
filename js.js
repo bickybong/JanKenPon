@@ -6,29 +6,29 @@ function compueterPlay() {
 function round(playerSelection, computerselection){
     if (playerSelection.toLowerCase() === "paper"){
         if (computerselection === "Paper"){
-            return alert("Its a paper tie") , playerScore, comScore
+            return winOrLose.textContent ="Its a paper tie" , playerScore, comScore
         } else if (computerselection === "Scissor"){
-            return alert("You lose! Scissor cuts paper"), playerScore, comScore++
+            return winOrLose.textContent ="You lose! Scissor cuts paper", playerScore, comScore++
         } else{
-            return alert("You win! Paper eats rock"), playerScore++, comScore
+            return winOrLose.textContent ="You win! Paper eats rock", playerScore++, comScore
         }
     }
     else if (playerSelection.toLowerCase() === "rock"){
         if (computerselection === "Paper"){
-            return alert("You lose! Paper beats rock"), playerScore, comScore++
+            return winOrLose.textContent = "You lose! Paper beats rock", playerScore, comScore++
         } else if (computerselection === "Scissor"){
-            return alert("You win! Rock beats Scissor"), playerScore++, comScore
+            return winOrLose.textContent ="You win! Rock beats Scissor", playerScore++, comScore
         } else{
-            return  alert("Its a rock tie"), playerScore, comScore
+            return  winOrLose.textContent ="Its a rock tie", playerScore, comScore
         }
     } else{
     if (playerSelection.toLowerCase() === "scissor"){
         if (computerselection === "Paper"){
-            return  alert("You win! Scissor beats Paper"), playerScore++, comScore
+            return  winOrLose.textContent ="You win! Scissor beats Paper", playerScore++, comScore
         } else if (computerselection === "Scissor"){
-            return alert("Its a Scissor tie"), playerScore, comScore
+            return winOrLose.textContent ="Its a Scissor tie", playerScore, comScore
         } else{
-            return alert("You lose! Rock beats Scissor"), playerScore, comScore++
+            return winOrLose.textContent ="You lose! Rock beats Scissor", playerScore, comScore++
         }}
     }}
 
